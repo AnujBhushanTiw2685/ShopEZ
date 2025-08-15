@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 4000;
 await connectDB();
 await connectCloudinary();
 
-const allowedOrigins = ['http://localhost:5173'];
+const allowedOrigins = ['http://localhost:5173', 'https://shopez-2hz8.onrender.com' ];
 
 app.use(cors({
     origin: allowedOrigins, // Allow requests from the frontend
